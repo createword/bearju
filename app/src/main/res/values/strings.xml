@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">浣熊聚</string>
+    <string-array name="strArray">
+        <item>首页</item>
+        <item>应用</item>
+        <item>游戏</item>
+        <item>分类</item>
+    </string-array>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+</resources>

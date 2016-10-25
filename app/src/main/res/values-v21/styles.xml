@@ -1,0 +1,19 @@
+<resources>
+  <style name="AppTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+      <!--状态栏沉浸-->
+      <item name="android:windowTranslucentStatus">true</item>
+      <!-- 底部导航栏颜色 -->
+<!--      <item name="android:navigationBarColor">@color/accent_material_light</item>-->
+      <!-- 底部导航栏半透明 -->
+<!--      <item name="android:windowTranslucentNavigation">true</item>-->
+      <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+      <item name="android:statusBarColor">@android:color/transparent</item>
+      <!--Window color  整个window 都显示的颜色  切勿打开-->
+     <!-- <item name="android:windowBackground">@color/dim_foreground_material_dark</item>-->
+
+
+    </style>
+</resources>
