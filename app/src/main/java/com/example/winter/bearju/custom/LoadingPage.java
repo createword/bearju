@@ -5,13 +5,10 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-
 import com.example.winter.bearju.R;
 import com.example.winter.bearju.utils.ThreadManager;
 import com.example.winter.bearju.utils.UiUtils;
-
 public abstract class LoadingPage extends FrameLayout {
-
 	public static final int STATE_UNKOWN = 0;
 	public static final int STATE_LOADING = 1;
 	public static final int STATE_ERROR = 2;

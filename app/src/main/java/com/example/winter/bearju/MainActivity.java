@@ -1,22 +1,17 @@
 package com.example.winter.bearju;
-
 import android.annotation.TargetApi;
-import android.graphics.Color;
 import android.os.Build;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import com.example.winter.bearju.base.BaseFragment;
 import com.example.winter.bearju.utils.FragmentFactoy;
 import com.example.winter.bearju.utils.UiUtils;
@@ -26,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private PagerTabStrip pagerTabStrip;
     private String[] array;
     private Toolbar mToolBar;
-private   TabLayout tabLayout;
+     private TabLayout tabLayout;
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +31,10 @@ private   TabLayout tabLayout;
         setSupportActionBar(mToolBar);
         initView();
     }
-
     public void initView() {
         array = UiUtils.getStringArray(R.array.strArray);
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
         tabLayout  = (TabLayout) findViewById(R.id.tably);
-
         mViewPager.setAdapter(new MyViewPagerAdapter(getSupportFragmentManager()));
         tabLayout.setupWithViewPager(mViewPager);
         mViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
