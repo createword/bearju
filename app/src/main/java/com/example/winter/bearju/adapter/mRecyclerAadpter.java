@@ -4,24 +4,21 @@
 package com.example.winter.bearju.adapter;
 
 import android.content.Context;
-import android.renderscript.Sampler;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import com.example.winter.bearju.R;
-import com.example.winter.bearju.library.RecyclerViewUtils;
 
 import java.util.ArrayList;
 
 public class mRecyclerAadpter extends RecyclerView.Adapter<mRecyclerAadpter.MyViewHolder> implements View.OnClickListener {
     private RecyclerView mRecyclerview;
-    MyViewHolder myViewHolder;
+    private  MyViewHolder myViewHolder;
     private Context mContext;
     private ArrayList<String> mList;
     private OnChildClickListener listener;
-   /* private RecyclerView mRecyclerview;*/
 
     public mRecyclerAadpter(Context mContext, ArrayList<String> mList, RecyclerView mRecyclerView) {
         this.mContext = mContext;
@@ -36,7 +33,7 @@ public class mRecyclerAadpter extends RecyclerView.Adapter<mRecyclerAadpter.MyVi
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View mveiw = LayoutInflater.from(mContext).inflate(R.layout.app_frag_item, parent, false);
+        View mveiw = LayoutInflater.from(mContext).inflate(R.layout.home_frag_item, parent, false);
         myViewHolder = new MyViewHolder(mveiw);
         return myViewHolder;
     }

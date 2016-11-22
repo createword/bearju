@@ -4,6 +4,7 @@
     android:layout_height="200dp"
     android:background="?attr/colorPrimary"
     android:gravity="center"
+    android:alpha="10"
     android:orientation="vertical"
     android:paddingTop="30dp">
 
@@ -17,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="CSDN废墟的树博客"
+        android:text="逍遥的小猫"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

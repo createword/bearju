@@ -6,7 +6,7 @@ import java.util.Map;
 
 import android.support.v4.app.Fragment;
 
-import com.example.winter.bearju.fragment.AppFragment;
+import com.example.winter.bearju.fragment.FindFragment;
 import com.example.winter.bearju.fragment.CategoryFragment;
 import com.example.winter.bearju.fragment.GameFragment;
 import com.example.winter.bearju.fragment.HomeFragment;
@@ -22,7 +22,7 @@ public class FragmentFactoy {
             if (position == 0) {
                 fragment = new HomeFragment();
             } else if (position == 1) {
-                fragment = new AppFragment();
+                fragment = new FindFragment();
             } else if (position == 2) {
                 fragment = new GameFragment();
             } else if (position == 3) {
